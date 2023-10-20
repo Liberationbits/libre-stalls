@@ -1,2 +1,129 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import JobRequestEditor from '$components/jobs/JobRequestEditor/JobRequestEditor.svelte';
+	import Logo from '$icons/Logo.svelte';
+	import { appHandlers } from '$stores/nip89';
+</script>
+
+<svelte:head>
+	<title>Freie-Shops - Ein eine App für souveräne Marktteilnehmer</title>
+</svelte:head>
+
+<div class="flex flex-col gap-12">
+	<section
+		class="mx-2 flex flex-col items-center justify-center gap-8 md:h-[50vh] md:flex-row lg:mx-auto">
+		<img
+			src="/favicon.png"
+			alt="Stall"
+			class="rounded-box h-full"
+		/>
+
+		<div class="flex flex-col items-start gap-3 lg:w-1/2 lg:gap-0">
+			<h1
+				class="text-center text-5xl md:text-7xl font-extrabold tracking-wider sm:text-start sm:text-6xl lg:text-8xl"
+			>
+				<span class="bg">Handel in Freiheit</span>
+			</h1>
+			<h2 class="text-base-100-content text-center text-3xl font-thin sm:text-start">
+				Ein souveräner Marktplatz
+			</h2>
+		</div>
+	</section>
+
+	<section class="flex flex-col gap-8">
+		<h1 class="flex flex-col items-center gap-4 text-center text-3xl md:text-5xl font-black">
+			<div class="text-2xl md:text-3xl font-bold opacity-80">Finde deine</div>
+			<span class="bg"> Händler jederzeit </span>
+		</h1>
+
+		<div class="relative mx-auto flex flex-col gap-8 px-4 lg:flex-row">
+			<div class="text-base-300-content prose rounded-box py-8 text-lg lg:w-2/3 lg:p-8">
+				<div class="sticky top-20">
+					<h1 class="text-3xl font-bold">Was sind Freie-Shops?</h1>
+
+					<p>
+						Es handelt sich um einen dezentralen, offenen Online-Marktplatz. Als Paradigmenwechsel gilt, den Marktteilnehmern die Hoheit über 
+                        ihre Daten zu geben, denn nur dann sind sie frei in ihrer Wahl unter verschiedenen Optionen, die im fairen Wettbewerb entstehen können.
+					</p>
+
+					<p>
+						<a href="/magic" class="text-accent">Dieser Paradigmenwechsel</a>
+						kommt von folgenden Eigenschaften:
+					</p>
+
+					<div class="not-prose grid grid-flow-row gap-8">
+						<div class="grid gap-6 sm:grid-cols-2">
+							<div class="card card-compact !rounded-xl">
+								<div class="card-body">
+									<span class="block text-2xl font-bold text-accent">offene Standards</span>
+									<p class="text-lg">
+										Jobs don't need to be specifically directed to any DVM; users simply request a
+										certain job to be done and available DVMs pick it up.
+									</p>
+								</div>
+							</div>
+
+							<div class="card card-compact !rounded-xl">
+								<div class="card-body">
+									<span class="block text-2xl font-bold text-accent">Hohheit über die Daten</span>
+									<p class="text-lg">
+										Jobs can be chained together, so that the output of one job is the input of
+										another. This allows for complex data-processing pipelines to be built.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card card-compact !rounded-xl">
+							<div class="card-body">
+								<span class="block text-2xl font-bold text-accent">Dezentralität</span>
+								<p class="text-lg">
+									The fact that there is no registration, no signups or approvals, the fact
+									<span class="text-base-100-content">
+										that
+										<mark>anyone can create a DVM</mark> and immediately monetize it with zero-intermediaries
+									</span>, in an ever-growing marketplace that is beaming with new users coming from
+									all types of use cases in mind, means that the DVM market is the freest market of
+									data-processing AIs in the world.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="max-w-5xl mx-auto relative">
+        <div class="flex flex-col gap-8 justify-around absolute top-0 left-0 w-full h-full items-center text-base-100-content z-50">
+            <h1 class="text-7xl sm:text-8xl font-extrabold tracking-wider text-center mt-24">
+                <span class="bg">Beginne die Erkundung</span>
+            </h1>
+
+            <div class="flex flex-row w-full mb-24">
+                <div class="w-1/2 flex flex-row items-center justify-center">
+                    <a href="/dvms" class="btn bg-gradient-to-r from-gradient3 to-gradient4 text-white !rounded-full btn-lg">
+                        Durchsuche den Marktplatz
+                    </a>
+                </div>
+                <div class="w-1/2 flex flex-row items-center justify-center">
+                    <button class="btn bg-gradient-to-l from-gradient3 to-gradient4 text-white !rounded-full btn-lg">
+                        Kreiere deinen eigenen Shop
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card opacity-20">
+            <JobRequestEditor
+            />
+        </div>
+    </section>
+</div>
+
+<style>
+	h1 span.bg {
+		background: linear-gradient(50deg, #fff 0%, #817eff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+</style>
