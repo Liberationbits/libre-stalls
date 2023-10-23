@@ -3,7 +3,7 @@
     import ndk from '$stores/ndk';
 	import NDK, { NDKDVMRequest, type NDKTag, type NostrEvent } from "@nostr-dev-kit/ndk";
     import { createEventDispatcher, onDestroy } from "svelte";
-    import { NDKAppHandlerEvent, type NDKDvmParam, type NDKEvent } from "@nostr-dev-kit/ndk";
+    import type { NDKAppHandlerEvent, NDKDvmParam } from "@nostr-dev-kit/ndk";
 	import JobRequestEditorInput from './JobRequestEditorInput.svelte';
     import JobRequestEditorPayment from './JobRequestEditorPayment.svelte';
 	import { jobRequestKinds, kindToDescription, kindToText } from '$utils';
