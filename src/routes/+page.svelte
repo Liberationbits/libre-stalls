@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Freie-Shops - Ein eine App für souveräne Marktteilnehmer</title>
+	<title>Freie-Shops - Eine App für souveräne Marktteilnehmer</title>
 </svelte:head>
 
 <div class="flex flex-col gap-12">
