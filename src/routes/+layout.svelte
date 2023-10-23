@@ -44,14 +44,6 @@
 
 <Navbar />
 
-<Modals>
-    <div
-        slot="backdrop"
-        class="backdrop z-20 fixed"
-        on:click={closeModal}
-        transition:fade={{ duration: 100 }}></div>
-</Modals>
-
 <div class="mx-auto">
 	<slot />
 </div>
@@ -60,14 +52,4 @@
 	:global(.userCard .userCard--avatar .avatar--image) {
 		@apply w-12 h-12;
 	}
-
-	.backdrop {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-		backdrop-filter: blur(0.15rem);
-        left: 0;
-        background: rgba(0,0,0,0.50)
-    }
 </style>
