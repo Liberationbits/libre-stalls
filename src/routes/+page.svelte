@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Freie-Shops - Eine App für souveräne Marktteilnehmer</title>
+	<title>Libre Markt - Ein souveräner Marktplatzt</title>
 </svelte:head>
 
 <div class="flex flex-col gap-12">
@@ -21,9 +21,9 @@
 			<h1
 				class="text-center text-5xl md:text-7xl font-extrabold tracking-wider sm:text-start sm:text-6xl lg:text-8xl"
 			>
-				<span class="bg">Handel</span>
+				<span class="bg">Libre</span>
 				<br class="hidden md:block" />
-				<span class="bg">in Freiheit</span>
+				<span class="bg">Markt</span>
 			</h1>
 			<h2 class="text-center text-3xl font-thin sm:text-start text-orange-400">
 				Ein souveräner Marktplatz
@@ -33,8 +33,8 @@
 
 	<section class="flex flex-col gap-8">
 		<h1 class="flex flex-col items-center gap-4 text-center text-3xl md:text-5xl font-black">
-			<div class="text-2xl md:text-3xl font-bold opacity-80">Finde deine</div>
-			<span class="bg"> Händler jederzeit </span>
+			<!---div class="text-2xl md:text-3xl font-bold opacity-80">Aktuele Angebote</div--->
+			<div class="bg">Aktuele Angebote</div>
 		</h1>
 
 		<div class="relative mx-auto flex flex-col gap-8 px-4 lg:flex-row">

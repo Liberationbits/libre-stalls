@@ -15,13 +15,13 @@
         localStorage.setItem('nostr-key', pk.privateKey!);
         localStorage.setItem('nostr-target-npub', $currentUser.npub);
 
-        // setupPlaceholderProfile();
+        // todo: setupPlaceholderProfile();
     }
 </script>
 
-<AttentionButton handleClick={loginAsGuest}>
+<AttentionButton on:click={loginAsGuest}>
     <div slot="btn-content" class="flex items-center gap-2">
         <KeyIcon />
-        <span >Continue as Guest</span>
+        <span >Weiter als Gast</span>
     </div>
 </AttentionButton>

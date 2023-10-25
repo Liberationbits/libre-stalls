@@ -32,13 +32,13 @@
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             /></svg
         >
-        <span>No Nostr extension in your browser</span>
+        <span>Keine Nostr-Erweiteung in dienem Browser gefunden</span>
         <div class="hidden">
-            <button class="btn btn-xs">Need help?</button>
+            <button class="btn btn-xs">Brauchst du Hilfe?</button>
         </div>
     </div>
 {:else}
     <SubtleButton handleClick={loginNip07} class="w-full">
-        <span slot="btn-content">Use Browser Extension</span>
+        <span slot="btn-content">Verwende Browser-Erweiterung</span>
     </SubtleButton>
 {/if}

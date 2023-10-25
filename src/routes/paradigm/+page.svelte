@@ -11,7 +11,7 @@
         <div class="flex flex-col gap-2">
             <h1 class="text-7xl font-black tracking-wide">Paradigmenwechsel</h1>
             <div class="text-lg text-orange-400">
-                Es gibt einige Dinge, die Freie-Shops zu etwas einzigartig machen.
+                Dinge, die diesen Online-Markt zu etwas einzigartigen machen
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
                     Hohheit über die Daten
                 </div>
 
-                <p>Die Daten der Shops, der Produkte, der Kunden und deren Interaktionen sind vom Marktplatz getrennt und liegen in der Obhut der Marktteilnehmer.</p>
+                <p>Die Daten der Anbieter, der Produkte, der Kunden und deren Interaktionen sind vom Marktplatz getrennt und liegen in der Obhut der Marktteilnehmer.</p>
 
                 <p></p>
             </div>

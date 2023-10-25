@@ -11,7 +11,7 @@
 	<div class="navbar-start">
 		<a href="/" class="btn btn-ghost text-xl normal-case px-0 hover:bg-transparent">
 			<ShoppingCart class="h-12 w-12" />
-			<h1 class="text-base md:text-xl font-bold">Freie-Shops</h1>
+			<h1 class="text-base md:text-xl font-bold">Libre Markt</h1>
 		</a>
 	</div>
 
@@ -20,7 +20,7 @@
 			<li>
 				<a class:tab-active={$page.url.pathname === '/paradigm'} class="" href="/paradigm">
 					<MagicWand class="h-6 w-6" />
-					Paradigmenwechsel</a
+					Über uns</a
 				>
 			</li>
 		</ul>
@@ -29,7 +29,7 @@
 			<li>
 				<a class:tab-active={$page.url.pathname === '/stalls'} class="" href="/stalls">
 					<HouseSimple class="h-6 w-6" />
-					Läden
+					Anbieter
 				</a>
 			</li>
 		</ul>
