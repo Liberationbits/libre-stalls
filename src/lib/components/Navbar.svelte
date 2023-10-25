@@ -29,7 +29,7 @@
 			<li>
 				<a class:tab-active={$page.url.pathname === '/stalls'} class="" href="/stalls">
 					<HouseSimple class="h-6 w-6" />
-					Anbieter
+					Kioske
 				</a>
 			</li>
 		</ul>

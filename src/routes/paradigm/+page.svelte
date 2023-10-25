@@ -37,7 +37,7 @@
                     Hohheit über die Daten
                 </div>
 
-                <p>Die Daten der Anbieter, der Produkte, der Kunden und deren Interaktionen sind vom Marktplatz getrennt und liegen in der Obhut der Marktteilnehmer.</p>
+                <p>Die Daten der Anbieter und ihrer Kioske, der Produkte, der Kunden und deren Interaktionen sind vom Marktplatz getrennt und liegen in der Obhut der Marktteilnehmer.</p>
 
                 <p></p>
             </div>
