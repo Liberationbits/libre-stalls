@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { userTaggedEvents } from '$stores/jobRequests';
 	import { initJobRequests, userJobRequests } from '$stores/jobRequests';
+	import { initMerchantData } from '$stores/nip15';
 	import ndk from '$stores/ndk';
 	import { onMount } from 'svelte';
 	import '../app.postcss';
@@ -35,10 +36,10 @@
 		}
 	}
 
-	$: if ($currentUser && !$userJobRequests) {
+	$: {
 		console.log(`init`);
-		initJobRequests();
-		initNotifications();
+		initMerchantData();
+		//initNotifications();
 	}
 </script>
 

@@ -1,7 +1,5 @@
 <script lang="ts">
-    import JobRequestEditor from '$components/jobs/JobRequestEditor/JobRequestEditor.svelte';
-	import Logo from '$icons/Logo.svelte';
-	import { appHandlers } from '$stores/nip89';
+    import { products } from "$stores/nip15";
 </script>
 
 <svelte:head>
@@ -36,6 +34,12 @@
 			<!---div class="text-2xl md:text-3xl font-bold opacity-80">Aktuele Angebote</div--->
 			<div class="bg">Aktuele Angebote</div>
 		</h1>
+
+		<div class="grid md:grid-cols-3 px-2 md:px-0 gap-4 mt-10">
+            {#each $products as prod}
+                <div>{prod}</div>
+            {/each}
+        </div>
 
 		<div class="relative mx-auto flex flex-col gap-8 px-4 lg:flex-row">
 			<div class="text-base-300-content prose rounded-box py-8 text-lg lg:w-2/3 lg:p-8">
