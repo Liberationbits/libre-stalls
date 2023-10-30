@@ -44,7 +44,8 @@
         {contentIsImageUrl() ? "" : "max-h-48"}
     ">
         {#if event.kind === 65001 && contentIsImageUrl()}
-            <img src={event.content} class="max-h-96" />
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src={event.content} class="max-h-96" alt="input image"/>
         {/if}
         <EventContent ndk={$ndk} {event} showMedia={true} />
     </div>

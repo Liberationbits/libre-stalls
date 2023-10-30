@@ -19,6 +19,9 @@
 </script>
 
 <div class="dropdown {hasFocus ? 'dropdown-open': ''} dropdown-end">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+    <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <label tabindex="0" on:click={toggleDropdown} >
         <div class="{hasFocus ? 'hidden' : 'transition duration-500 ease-out flex items-center'} transition">
             <slot name="dropdown-button" />
@@ -29,6 +32,7 @@
             </div>
         </div>
     </label>
+    <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
     <div tabindex="0" class="dropdown-content z-[1] mt-2">
         <slot />
     </div>

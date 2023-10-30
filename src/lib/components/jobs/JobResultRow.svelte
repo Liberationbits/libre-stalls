@@ -57,7 +57,8 @@
         {shouldRestrictResultHeight() ? "max-h-48" : ""}
     ">
         {#if event.kind === 65001 && contentIsImageUrl()}
-            <img src={event.content} class={$$props.imageClass} />
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src={event.content} class={$$props.imageClass} alt="input image" />
         {:else if event.jobRequest?.kind === 65006 ||  event.jobRequest?.kind === 65007}
             {#if decodedContent}
                 <div class="flex flex-col">
