@@ -37,6 +37,7 @@ class StallEvent extends NDKEvent {
      * @returns StallEvent
      */
     static from(event: NDKEvent) {
+        // todo: check the event kind before
         return new StallEvent(event.ndk, event.rawEvent());
     }
 }
